@@ -2,20 +2,20 @@
 
 
 ## First Image
-<img alt="image 7" src="images/output_7_0.png" width=700>
+![first chart](output_7_0.png)
 
 ## Second Image
-<img alt="image 9" src="images/output_9_0.png" width=700>
+![second chart](output_9_0.png)
 <p> first paragraph</p>
 
 ## Image
-<img alt="image 11" src="images/output_11_0.png" width=700>
+![third chart](output_11_0.png)
 <p> paragraph </p>
 
 ## Image
-<img alt="image 11" src="images/output_13_0.png" width=700>
+![fourth chart](output_13_0.png)
 <p> paragraph </p>
 
 ## Image
-<img alt="image 11" src="images/output_15_0.png" width=700>
+![fifth chart](output_15_0.png)
 <p> paragraph </p>
