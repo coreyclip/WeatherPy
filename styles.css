@@ -1,0 +1,19 @@
+.headerbox {
+    height: 100px;
+    padding: 10px;
+    color: #fff;
+    background: deepskyblue;
+}
+
+.bodybox {
+    height: 800px;
+    width: 400px;
+    padding: 10px;
+    color: bisque;
+    background: rgb(33, 126, 95);
+    
+}
+
+.img {
+    float: right;
+}
