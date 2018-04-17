@@ -1,6 +1,10 @@
 .headerbox {
     height: 100px;
-    padding: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    margin-left:3px;
     color: #fff;
     background: deepskyblue;
 }
@@ -15,5 +19,28 @@
 }
 
 .img {
-    float: right;
+    float: left;
+    margin:20px;
+    padding: 40px;
+
+}
+
+.main {
+    background: rgb(201, 155, 100)
+}
+
+.data-table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 4px;
+    -webkit-border-horizontal-spacing: 3px;
+    -webkit-border-vertical-spacing: 3px;
+    border-color: grey;
+    border-top-color: grey;
+    border-right-color: grey;
+    border-bottom-color: grey;
+    border-left-color: grey;
+    background-color: blanchedalmond;
+    text-orientation: inherit
+    
 }
