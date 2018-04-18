@@ -10,6 +10,33 @@
     <script src="main.js"></script>
 </head>
 <body>
+        <div class='row bg-primary' >
+                <div class='col col-md-offset-5'>
+                    <div class='headerbox '> 
+                        <h1> WeatherPy </h1> 
+                    </div>
+                </div>
+            
+                <div class='col'>
+                        <span class="align-right">
+                            <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Visualizations by Latitude
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="../templates/humidity.html">Humidity</a>
+                                        <a class="dropdown-item" href="../templates/pressure.html">Pressure</a>
+                                        <a class="dropdown-item" href="../templates/temperature.html">Temperature</a>
+                                        <a class="dropdown-item" href="../templates/wind.html">Wind</a>
+                                        <a class="dropdown-item" href="../templates/cities.html">Top Randomly Found Cities</a>
+                                        
+                                    </div>
+                            </div>
+                        <a class="btn btn-outline-default mt-3" type="button" href="../templates/comparisons.html">Comparisons</a>
+                        <a class="btn btn-outline-default mt-3" type="button" href="templates/data.html">Data</a>
+                      </span>
+                    </div>
+            </div>
     <div class='container'>
         <div class='col'>
             <img src="../images/random_cities.png" alt='randomly found cities' width=800, height=800>
@@ -21,4 +48,9 @@
     </div>
     
 </body>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>

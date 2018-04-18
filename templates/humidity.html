@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html class='main'>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Temperature</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />        
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Comparisons</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href='styles.css'/>
+    
+    </head>
 <body>
-        <div class='row bg-primary' >
-                <div class='col col-md-offset-5'>
-                    <div class='headerbox '> 
-                        <h1 href='../index.html'> WeatherPy </h1> 
-                        <h1 class='lead'>Comparisons</h1>
-                    </div>
+    <div class='row bg-primary' >
+            <div class='col col-md-offset-5'>
+                <div class='headerbox '> 
+                    <h1 href='../index.html'> WeatherPy </h1>
+                    <h2 class='lead'>Humidity</h2>                     
                 </div>
-            
-                <div class='col'>
-                        <span class="align-middle">
-                        <a class="btn btn-outline-default mt-3" type="button" href="../templates/visualizations.html">Visualizations</a>
-                        <a class="btn btn-outline-default mt-3" type="button" href="../templates/comparisons.html">Comparisons</a>
-                        <a class="btn btn-outline-default mt-3" type="button" href="../templates/data.html">Data</a>
-                      </span>
-                    </div>
             </div>
-
+        
+            <div class='col'>
+                    <span class="align-right">
+                        <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Visualizations by Latitude
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="../templates/humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="../templates/pressure.html">Pressure</a>
+                                    <a class="dropdown-item" href="../templates/temperature.html">Temperature</a>
+                                    <a class="dropdown-item" href="../templates/wind.html">Wind</a>
+                                    <a class="dropdown-item" href="../templates/cities.html">Top Randomly Found Cities</a>
+                                    
+                                </div>
+                        </div>
+                    <a class="btn btn-outline-default mt-3" type="button" href="../templates/comparisons.html">Comparisons</a>
+                    <a class="btn btn-outline-default mt-3" type="button" href="templates/data.html">Data</a>
+                    </span>
+                </div>
+        </div>
     <div class='container'>
         <div class='col'>
             <img src="../images/hum_lat.png" alt='temperature vs latitude' width=800, height=800>
@@ -38,4 +50,10 @@
     </div>
     
 </body>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </html>
