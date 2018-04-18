@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class='main'>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,13 +19,23 @@
         
             <div class='col'>
                     <span class="align-middle">
-                    <a class="btn btn-outline-default mt-3" type="button" href="templates/visualizations.html">Visualizations</a>
+                        <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Visualizations by Latitude
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="../templates/humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="../templates/pressure.html">Pressure</a>
+                                    <a class="dropdown-item" href="../templates/temperature.html">Temperature</a>
+                                    <a class="dropdown-item" href="../templates/wind.html">Wind</a>
+                                    <a class="dropdown-item" href="../templates/cities.html">Top Randomly Found Cities</a>
+                                    
+                                </div>
+                                </div>
                     <a class="btn btn-outline-default mt-3" type="button" href="templates/comparisons.html">Comparisons</a>
                     <a class="btn btn-outline-default mt-3" type="button" href="templates/data.html">Data</a>
                   </span>
                 </div>
-            </span>
-            </div>
         </div>
         <div class='container m-0'> 
             <div class='row'> 
