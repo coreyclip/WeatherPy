@@ -23,13 +23,13 @@
                 <span class="align-right">
                     <div class='col-md-10 center_button'>
                         <a href="templates/comparisons.html">
-                            <button class="btn btn-info active button" type="submit">Comparisons</button>  
+                            <button class="btn btn-info  button" type="submit">Comparisons</button>  
                         </a>
                         <a href="templates/data.html">
-                            <button class="btn btn-info active button" type="submit" >Data</button>   
+                            <button class="btn btn-info  button" type="submit" >Data</button>   
                         </a>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Visualizations by Latitude <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -42,55 +42,49 @@
                             </div>
                     </div> 
                     <div class='col-md-2'>
-                        <img src='images/weather.png' class="img-circle logo" width="70" height="70" >
+                        <img src='images/weather.png' class="img-circle logo" width="80" height="80" >
                     </div>                
                 </span>
             </div>
         </div>
     </div>
-        <div class='container'> 
-            <div class='row'> 
-                <div class='col-md-12'>
-                        <h3>Summary</h3>                    
-                </div>
-                </div>
-                <div class='row'>
-                    <h6>Measuring Weather Patterns along Latitude lines</h6>
-                </div>
-            </div>
     <div class="container">
         <div class='row'>
-                <div class='col-md-8 bg-warning'>
-                    <img class='img' src='images/temp_lat.png' alt='temperature vs latitude' height="500" width="450" >
-                    <p class="text-right">
-                        For this project we randomly generated 1000 
-                        latitude/longitude values and gathered the current weather for the closest
-                        nearby city where weather was available using the  
-                        <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. 
-                        With our coordinates and weather data in hand we can get a high level perspective
-                        on how the weather varies as we move to and from the equator. 
-                        
-                    </p>
-                
+            <hr>
+                <div class='col-md-8'>
+                    <img id='title_img' src='images/temp_lat.png' alt='temperature vs latitude' height="500" width="450" >
+                <p class="text-right index_p">
+                    <h6>Measuring Weather Patterns along Latitude lines</h6>
+                    For this project we randomly generated 1000 
+                    latitude/longitude values and gathered the current weather for the closest
+                    nearby city where weather was available using the  
+                    <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. 
+                    With our coordinates and weather data in hand we can get a high level perspective
+                    on how the weather varies as we move to and from the equator. 
+                    
+                </p>
                 </div>
+                
                 <div class='col-md-4 bg-success'>
                         <div class='row'>
-                                
-                                <div class='col'>
-                                    <img class="align-self-center img" src='images/humidity_lat.png' alt='humidity and latidude'height='550' width='600'>
-                                    </div>
-                                </div>
+                            <div class='vizbox'> 
+                                <h5> Visualizations </h5> 
                         <div class='row'>
-                            <div class='col'>
-                                <img class= 'img' src='images/pressure_lat.png' alt='Pressure and Latitude' height='550' width='600'>
+                            <div class='col-sm-6'>
+                                <img class= 'thumbs' src='images/pressure_lat.png' alt='Pressure and Latitude' >
                             </div>
-                            
-                            <div class='col'>        
-                                <img class= 'img' src='images/wind_lat.png' alt='wind speed and latitude' height='550' width='600'>   
+                            <div class='col-sm-6'>
+                                <img class= 'thumbs' src='images/humidity_lat.png' alt='Pressure and Latitude' >
                             </div>
-                            <div class='col'>
-                                <img class= 'img' src='images/visibility_lat.png' alt='visibility and latitude' height='550' width='600'>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-6'>        
+                                <img class= 'thumbs' src='images/wind_lat.png' alt='wind speed and latitude' >   
                             </div>
+                            <div class='col-sm-6'>
+                                <img class= 'thumbs' src='images/visibility_lat.png' alt='visibility and latitude' >
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
