@@ -55,7 +55,7 @@
     margin:10px;
     padding: 40px;
     float: left;
-    height:250pt;
+    height:300pt;
     width:230pts;
 
 }
@@ -101,7 +101,7 @@
 
 .vizclr{
   
-  background-color:rgb(9, 95, 129);
+  background-color: #2490a0;
   color:aquamarine;
   margin-top:10pt;
 }

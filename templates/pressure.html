@@ -11,85 +11,67 @@
             <title>Pressure</title>
 </head>
 <body>
+    <!--Beginning of nav bar-->
     <div class="container">
-                <div class='row bg-primary' >
-                    <div class='col-md-4'>
-                        <div class='headerbox'> 
-                            <h1> WeatherPy </h1>
-                            <h4>Pressure</h4> 
-                        </div>
-                    </div>
-                
-                <div class='col-md-8'>
-                    <div class='row'>
-                        <span class="align-right">
-                            <div class='col-md-10 center_button'>
-                                    <a href='../index.html'>
-                                        <button class="btn btn-info  button" type="submit">Home</button>  
-                                        </a>
-                                <a href="templates/comparisons.html">
-                                    <button class="btn btn-info  button" type="submit">Comparisons</button>  
-                                </a>
-                                <a href="templates/data.html">
-                                    <button class="btn btn-info  button" type="submit" >Data</button>   
-                                </a>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Visualizations by Latitude <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="templates/humidity.html">Humidity</a></li>
-                                        <li><a href="templates/pressure.html">Pressure</a></li>
-                                        <li><a href="templates/temperature.html">Temperature</a></li>
-                                        <li><a href="templates/wind.html">Wind</a></li>
-                                        <li><a href="templates/cities.html">Top Randomly Found Cities</a></li>
-                                    </ul>
-                                    </div>
-                            </div> 
-                            <div class='col-md-2'>
-                                <img src='images/weather.png' class="img-circle logo" width="80" height="80" >
-                            </div>                
-                        </span>
+            <div class='row bg-primary' >
+                <div class='col-md-4'>
+                    <div class='headerbox'> 
+                        <h1> WeatherPy </h1>
+                        <h4>Comparisons</h4> 
                     </div>
                 </div>
-            </div>
-            <div class='col col-md-offset-5'>
-                <div class='headerbox '> 
-                    <h1 href='../index.html'> WeatherPy </h1>
-                    <h2 class='lead'>Pressure</h2>                     
-                </div>
-            </div>
-        
-            <div class='col'>
+            
+            <div class='col-md-8'>
+                <div class='row'>
                     <span class="align-right">
-                        <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Visualizations by Latitude
+                        <div class='col-md-10 center_button'>
+                                <a href='../index.html'>
+                                    <button class="btn btn-info  button" type="submit">Home</button>  
+                                    </a>
+                            <a href="../templates/comparisons.html">
+                                <button class="btn btn-info  button" type="submit">Comparisons</button>  
+                            </a>
+                            <a href="../templates/data.html">
+                                <button class="btn btn-info  button" type="submit" >Data</button>   
+                            </a>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Visualizations by Latitude <span class="caret"></span>
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="../templates/humidity.html">Humidity</a>
-                                    <a class="dropdown-item" href="../templates/pressure.html">Pressure</a>
-                                    <a class="dropdown-item" href="../templates/temperature.html">Temperature</a>
-                                    <a class="dropdown-item" href="../templates/wind.html">Wind</a>
-                                    <a class="dropdown-item" href="../templates/cities.html">Top Randomly Found Cities</a>
-                                    
+                                <ul class="dropdown-menu">
+                                    <li><a href="../templates/humidity.html">Humidity</a></li>
+                                    <li><a href="../templates/pressure.html">Pressure</a></li>
+                                    <li><a href="../templates/temperature.html">Temperature</a></li>
+                                    <li><a href="../templates/wind.html">Wind</a></li>
+                                    <li><a href="../templates/cities.html">Top Randomly Found Cities</a></li>
+                                </ul>
                                 </div>
-                        </div>
-                    <a class="btn btn-outline-default mt-3" type="button" href="../templates/comparisons.html">Comparisons</a>
-                    <a class="btn btn-outline-default mt-3" type="button" href="templates/data.html">Data</a>
+                        </div> 
+                        <div class='col-md-2'>
+                            <img src='../images/weather.png' class="img-circle logo" width="80" height="80" >
+                        </div>                
                     </span>
                 </div>
-        </div>
-    <div class='container'>
-        <div class='col'>
-            <img src="../images/pressure_lat.png" alt='temperature vs latitude' width=800, height=800>
-
-        </div>
-        <div class='col'>
-            <p class='lead'> information about  latitude</p>
+            </div>
         </div>
     </div>
-    
+<!--end of nav bar-->
+        <div class='row vizclr'>
+                <div class='col-md-5'>
+                    <img id='title_img' src="../images/pressure_lat.png" alt='randomly found cities'>
+                </div>
+                <div class='col-md-4'>
+                    <p class="text-left">
+                    <h4>Mountain Weather</h4>
+                    One major factor effecting atmospheric pressure is altitude.
+                    In this graph we can see that while most area have pressure values
+                    close to 1000 which is equal to the average pressure at sea level.
+                    There is a scattering of cities at various latitude lines that have much 
+                    lower atmospheric pressure indicating cities located at higher elevations.
+                
+                    
+                </p>
+                </div>
 </body>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

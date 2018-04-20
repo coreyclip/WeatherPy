@@ -11,6 +11,7 @@
             <title>Temperature</title>
 </head>
 <body>
+        <!--Beginning of nav bar-->
         <div class="container">
                 <div class='row bg-primary' >
                     <div class='col-md-4'>
@@ -27,10 +28,10 @@
                                     <a href='../index.html'>
                                         <button class="btn btn-info  button" type="submit">Home</button>  
                                         </a>
-                                <a href="templates/comparisons.html">
+                                <a href="../templates/comparisons.html">
                                     <button class="btn btn-info  button" type="submit">Comparisons</button>  
                                 </a>
-                                <a href="templates/data.html">
+                                <a href="../templates/data.html">
                                     <button class="btn btn-info  button" type="submit" >Data</button>   
                                 </a>
                                 <div class="btn-group">
@@ -38,57 +39,44 @@
                                         Visualizations by Latitude <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a href="templates/humidity.html">Humidity</a></li>
-                                        <li><a href="templates/pressure.html">Pressure</a></li>
-                                        <li><a href="templates/temperature.html">Temperature</a></li>
-                                        <li><a href="templates/wind.html">Wind</a></li>
-                                        <li><a href="templates/cities.html">Top Randomly Found Cities</a></li>
+                                        <li><a href="../templates/humidity.html">Humidity</a></li>
+                                        <li><a href="../templates/pressure.html">Pressure</a></li>
+                                        <li><a href="../templates/temperature.html">Temperature</a></li>
+                                        <li><a href="../templates/wind.html">Wind</a></li>
+                                        <li><a href="../templates/cities.html">Top Randomly Found Cities</a></li>
                                     </ul>
                                     </div>
                             </div> 
                             <div class='col-md-2'>
-                                <img src='images/weather.png' class="img-circle logo" width="80" height="80" >
+                                <img src='../images/weather.png' class="img-circle logo" width="80" height="80" >
                             </div>                
                         </span>
                     </div>
                 </div>
             </div>
-                <div class='col col-md-offset-5'>
-                    <div class='headerbox '> 
-                        <h1 href='../index.html'> WeatherPy </h1>
-                        <h2 class='lead'>Temperature</h2>                     
+        </div>
+    <!--end of nav bar-->
+            <div class='row vizclr'>
+                    <div class='col-md-5'>
+                        <img id='title_img' src="../images/temp_lat.png" alt='temperature'>
                     </div>
-                </div>
-            
-                <div class='col'>
-                        <span class="align-right">
-                            <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Visualizations by Latitude
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="../templates/humidity.html">Humidity</a>
-                                        <a class="dropdown-item" href="../templates/pressure.html">Pressure</a>
-                                        <a class="dropdown-item" href="../templates/temperature.html">Temperature</a>
-                                        <a class="dropdown-item" href="../templates/wind.html">Wind</a>
-                                        <a class="dropdown-item" href="../templates/cities.html">Top Randomly Found Cities</a>
-                                        
-                                    </div>
-                            </div>
-                        <a class="btn btn-outline-default mt-3" type="button" href="../templates/comparisons.html">Comparisons</a>
-                        <a class="btn btn-outline-default mt-3" type="button" href="templates/data.html">Data</a>
-                        </span>
+                    <div class='col-md-4'>
+                        <p class="text-left">
+                        <h4>Outline of the Earth</h4>
+                        By plotting temperature against our latitude values we get a image that basically
+                        outlines a tilted sphere. The data for this project was scraped back in Winter of 2018. 
+                        It's notable that the graph reflects the fact that this shows that it's currently winter 
+                        in the Northern Hemisphere. At the higher latitude values the rate of temperature drop increases as we move
+                        away from the equator. While in the Southern Hemisphere the we see more milder temperatures. This is due to 
+                        the planet's axil tilt. At this point the earth is tilted southwards, leading to warmer and milder temperatures in the south. 
+                    
+                        
+                    </p>
                     </div>
-            </div>
-    <div class='container'>
-        <div class='col'>
-            <img src="../images/temp_lat.png" alt='temperature vs latitude' width=800, height=800>
+    </body>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        </div>
-        <div class='col'>
-            <p class='lead'> information about temperature and latitude</p>
-        </div>
-    </div>
-    
-</body>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
